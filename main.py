@@ -1,11 +1,12 @@
-size, n = map(int, input().split())
+a = input()
+b = input()
+c = input()
+print(str(a))
+print(str(b))
+print(str(c))
 
-l = [0 for i in range(size)]
-
-for _ in range(n):
-  left, right, ball = map(int, input().split())
-  l[left - 1:right] = [ball] * (right - left + 1)
-
-print(*l)
-
-
+'''while True: #while True를 통해 입력을 계속 반복
+    try: #예외처리
+        print(input())
+    except EOFError: #예외처리
+        break'''
